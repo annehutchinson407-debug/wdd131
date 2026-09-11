@@ -12,10 +12,19 @@
     box-sizing: border-box;
 }
 
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
 header {
     background-color: var(--secondary-color);
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 header span {
@@ -59,6 +68,13 @@ main section {
 
 section img {
     max-width: 250px;
+}
+
+header span {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
 }
 
 h1 {
