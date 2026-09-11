@@ -96,13 +96,13 @@ main div {
     gap: 30px;
 }
 
-section nav {
+.webdevresources {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-rows: 1 fr;
     padding: 40px;
 }
 
-section a {
+.webdevresources a {
     padding: 10px;
     text-decoration: none;
 }
