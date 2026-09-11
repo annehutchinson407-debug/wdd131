@@ -27,10 +27,6 @@ header {
     padding: 10px 20px;
 }
 
-header span {
-    display: block;
-}
-
 header nav {
     background-color: var(--primary-color);
     color: var(--accent1-color);
@@ -71,6 +67,7 @@ section img {
 }
 
 header span {
+    display: block;
     width: 100%;
     padding: 20px;
     text-align: center;
