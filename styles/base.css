@@ -89,8 +89,9 @@ h2{
 
 main div {
     display: grid;
-    grid-template-columns: auto;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: baseline;
 }
 
 .webdevresources {
