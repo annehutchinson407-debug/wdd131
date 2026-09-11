@@ -74,7 +74,7 @@ h2{
 
 }
 
-div {
+main div {
     display: grid;
     grid-template-columns: auto;
     gap: 30px;
