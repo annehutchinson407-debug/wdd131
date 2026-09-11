@@ -49,6 +49,14 @@ header nav ul li {
     flex: 1 1 100%;
 }
 
+main {
+    max-width: 70%;
+}
+
+main section {
+    align-items: center;
+}
+
 section img {
     max-width: 250px;
 }
@@ -67,14 +75,14 @@ h2{
 }
 
 div {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
     gap: 30px;
-    justify-content: space-evenly;
 }
 
 section nav {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
     padding: 40px;
 }
 
