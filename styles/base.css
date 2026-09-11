@@ -35,6 +35,10 @@ header nav a {
     text-decoration: none;
 }
 
+header nav a:hover {
+    text-decoration: overline;
+}
+
 header nav ul {
     display: flex;
     justify-content: space-evenly;
