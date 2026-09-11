@@ -1,7 +1,7 @@
 :root {
     --primary-color: black;
     --secondary-color: rgb(241, 154, 154);
-    --accent1-color: rgb(236, 224, 144);
+    --accent1-color: rgb(255, 234, 100);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
 }
@@ -35,13 +35,13 @@ header nav a {
     text-decoration: none;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
-nav ul li {
+header nav ul li {
     flex: 1 1 100%;
 }
 
@@ -56,13 +56,27 @@ h1 {
     line-height: 2;
 }
 
-div {
-    display: flex;
-    gap: 10px;
+h2{
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+
 }
 
-div section {
-    
+div {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+section nav {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+section a {
+    padding: 10px;
+    text-decoration: none;
 }
 
 footer {
