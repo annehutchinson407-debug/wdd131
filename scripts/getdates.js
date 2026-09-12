@@ -3,5 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('currentyear').textContent = year;
 
     const lastModified = new Date(document.lastModified);
-    document.getElementById('lastModified').textContent = 'Last modified: ${lastModified.toLocalString()';
+    document.getElementById('lastModified').textContent =
+        `Last modified: ${lastModified.toLocaleString()}`;
 })
