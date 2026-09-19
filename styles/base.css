@@ -46,14 +46,16 @@ header nav a:hover {
     text-decoration: overline;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-header nav ul li {
-    flex: 1 1 100%;
+@media (min-width:640px) {
+    header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    
+    header nav ul li {
+        flex: 1 1 auto;
+    }
 }
 
 main {
