@@ -1,8 +1,8 @@
-@media (max-width: 640px) {
 :root {
     --primary-color: rgb(19, 100, 175);
     --secondary-color: rgb(255, 217, 0);
     --accent1-color: rgb(0, 0, 0);
+    --accent2-color: rgb(0, 104, 54);
 }
 
 body {
@@ -32,15 +32,14 @@ header ul {
     justify-content: center;
     gap: 10px;
 }
-.nav-links {
-    display: none;
-}
 
-.hamburger-menu {
+.hamburger {
+    background-color: var(--primary-color);
     display: flex;
     cursor: pointer;
     flex-direction: column;
     gap: 10px;
+    border: none;
 }
 
 .bar {
@@ -61,6 +60,30 @@ header nav a:hover {
     color: var(--accent1-color);
 }
 
+@media (max-width: 640px) {
+.hamburger {
+    display: flex;
+    width: auto;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 220px;
+    background-color: var(--accent2-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+}
+
 h1{
     text-align: center;
 }
@@ -69,6 +92,7 @@ h1{
 .album {
     grid-template-columns: 1fr 1fr;
 }
+
 
 main div {
     display: grid;
@@ -89,5 +113,4 @@ main div figcaption {
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-}
 }
