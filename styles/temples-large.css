@@ -1,8 +1,9 @@
 @media (min-width:640px) {
-    :root {
+:root {
     --primary-color: rgb(19, 100, 175);
-    --secondary-color: rgb(255, 217, 0);
+    --secondary-color: rgb(247, 231, 137);
     --accent1-color: rgb(0, 0, 0);
+    --accent2-color: rgb(0, 104, 54);
 }
 
 body {
@@ -19,7 +20,7 @@ header {
 
 header span {
     color: var(--secondary-color);
-    margin: 10;
+    margin: 10px;
     font-size: 40px;
 }
 
