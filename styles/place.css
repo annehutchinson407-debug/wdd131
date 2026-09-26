@@ -93,7 +93,7 @@ footer {
     gap: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     .layout-container {
         display: grid;
 
