@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germany - Anne Ferris</title>
+    <meta name="author" content="Anne Ferris">
+    <meta name="description" content="A homepage designed with the skills from our web development course to display our attained knowledge.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="box">
+        <h1>Germany</h1>
+    </header>
+    <main class="layout-container">
+        <div class="box image">
+            <img src="images/heidelberg.webp">
+        </div>
+        <section class="box data">
+            <h2>Data</h2>
+            <ul class="list">
+                <li><span class="label">Area:</span> <span class="value">138,102 mi²</span></li>
+                <li><span class="label">Population:</span> <span class="value">83.5 million</span></li>
+                <li><span class="label">Capital:</span> <span class="value">Berlin</span></li>
+                <li><span class="label">Languages:</span> <span class="value">German</span></li>
+                <li><span class="label">Time Zone:</span> <span class="value">UTC +2</span></li>
+                <li><span class="label">Calling Code:</span> <span class="value">+49</span></li>
+                <li><span class="label">Internet TLD:</span> <span class="value">.de</span></li>
+            </ul>
+        </section>
+        <section class="box weather">
+            <h2>Weather</h2>
+            <div class="weather-icon"><img src="images/partly_cloudy_day_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"></div>
+            <ul class="kv-list">
+                <li><span class="label">Temperature:</span> <span class="value" id="temperature-value">57°F</span></li>
+                <li><span class="label">Conditions:</span> <span class="value">Sunny</span></li>
+                <li><span class="label">Wind:</span> <span class="value" id="wind-value">1 mph</span></li>
+                <li><span class="label">Wind chill:</span> <span class="value" id="wind-chill">Calculating…</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Anne Ferris | Hawaii</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
