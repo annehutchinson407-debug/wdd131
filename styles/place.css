@@ -70,8 +70,14 @@ header {
 }
 
 .weather-icon {
-    font-size: 24px;
-    margin: 5px 0;
+    display: none;
+}
+
+.weather h2::after {
+    content: "☀️";
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.1em;
 }
 
 footer {
