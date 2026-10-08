@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const yearElement = document.querySelector('#year');
+document.addEventListener("DOMContentLoaded", () => {
+    const year = new Date().getFullYear();
+    document.getElementById('currentyear').textContent = year;
 
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-});
+    const lastModified = new Date(document.lastModified);
+    document.getElementById('lastModified').textContent =
+        `Last modified: ${lastModified.toLocaleString()}`;
+})
