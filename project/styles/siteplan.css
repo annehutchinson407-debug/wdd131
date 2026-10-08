@@ -167,6 +167,23 @@ h2 {
     height: 120px;
 }
 
+.color-block.forest {
+    background: #2f6f4f;
+}
+
+.color-block.purple {
+    background: #7e57c2;
+}
+
+.color-block.mint {
+    background: #eaf7ee;
+    border-bottom: 1px solid var(--border);
+}
+
+.color-block.charcoal {
+    background: #1f2a37;
+}
+
 .swatch-info {
     padding: 0.8rem 0.9rem;
     background: white;
