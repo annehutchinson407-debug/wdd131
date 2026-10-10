@@ -58,7 +58,6 @@ main {
 h1 {
     margin: 0;
     color: var(--primary);
-    font-size: clamp(2rem, 2.7rem);
     line-height: 1.2;
 }
 
@@ -218,9 +217,6 @@ legend {
     width: 1px;
     height: 1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    clip-path: inset(50%);
 }
 
 footer {
