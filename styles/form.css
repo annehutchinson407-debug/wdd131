@@ -1,18 +1,12 @@
 :root {
-    color-scheme: light;
-    --ink: #2b1f35;
-    --muted: #62566d;
-    --primary: #6d3fc0;
-    --primary-dark: #452278;
-    --highlight: #efe7fb;
-    --border: #d9cbea;
-    --control-border: #b9a8d3;
-    --surface: #fff;
-    --page: #f7f3fc;
-    --focus: #d88b24;
+    --primary: rgb(95, 0, 159);
+    --secondary: #5a8746;
+    --border: #000000;
+    --accent: #ebfedd;
+    --accent2: rgb(214, 240, 202);
+    --accent3: rgb(249, 251, 248);
+    --star: rgb(181, 134, 15);
     font-family: "Segoe UI", Arial, sans-serif;
-    color: var(--ink);
-    background: var(--page);
 }
 
 * {
@@ -28,8 +22,7 @@ body {
 }
 
 .site-header {
-    background: var(--primary-dark);
-    color: var(--surface);
+    background: var(--secondary);
     padding: 0.9rem max(1rem, calc((100% - 48rem) / 2));
 }
 
@@ -48,10 +41,9 @@ main {
 
 .form-card {
     padding: clamp(1.25rem, 5vw, 2.5rem);
-    background: var(--surface);
+    background: var(--accent2);
     border: 1px solid var(--border);
     border-radius: 1rem;
-    box-shadow: 0 0.75rem 2rem rgb(69 34 120 / 10%);
 }
 
 .eyebrow {
@@ -65,14 +57,13 @@ main {
 
 h1 {
     margin: 0;
-    color: var(--primary-dark);
-    font-size: clamp(2rem, 7vw, 2.7rem);
+    color: var(--primary);
+    font-size: clamp(2rem, 2.7rem);
     line-height: 1.2;
 }
 
 .intro {
     margin: 0.75rem 0 1.75rem;
-    color: var(--muted);
 }
 
 form {
@@ -92,8 +83,7 @@ legend {
 
 .required-note,
 .optional-note {
-    color: var(--muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 400;
 }
 
@@ -103,10 +93,9 @@ textarea {
     width: 100%;
     min-height: 2.9rem;
     padding: 0.65rem 0.75rem;
-    border: 1px solid var(--control-border);
+    border: 1px solid var(--secondary);
     border-radius: 0.45rem;
-    background: var(--surface);
-    color: var(--ink);
+    background: var(--accent);
     font: inherit;
 }
 
@@ -118,14 +107,10 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 a:focus-visible {
-    outline: 3px solid var(--focus);
     outline-offset: 2px;
 }
 
 fieldset {
-    min-width: 0;
-    margin: 0;
-    padding: 0;
     border: 0;
 }
 
@@ -136,7 +121,7 @@ legend {
 
 .field-hint {
     margin: 0 0 0.55rem;
-    color: var(--muted);
+    color: var(--primary);
     font-size: 0.9rem;
 }
 
@@ -156,7 +141,7 @@ legend {
     padding: 0.35rem;
     border: 1px solid var(--border);
     border-radius: 0.45rem;
-    background: #fcfaff;
+    background: var(--accent3);
     cursor: pointer;
 }
 
@@ -169,7 +154,7 @@ legend {
 }
 
 .rating-option span[aria-hidden="true"] {
-    color: #a7680a;
+    color: var(--star);
     font-size: 1.15rem;
     line-height: 1;
 }
@@ -191,30 +176,25 @@ legend {
     min-height: 3.2rem;
     border: 0;
     border-radius: 0.5rem;
-    background: var(--primary);
-    color: var(--surface);
+    background: var(--secondary);
     font-weight: 700;
     cursor: pointer;
 }
 
 .submit-button:hover {
-    background: var(--primary-dark);
-}
-
-.confirmation-card > p:not(.eyebrow) {
-    color: var(--muted);
+    background: var(--primary);
+    color: var(--accent);
 }
 
 .review-count {
     margin: 1.5rem 0;
     padding: 1rem;
     border-radius: 0.5rem;
-    background: var(--highlight);
-    color: var(--ink) !important;
+    background: var(--accent);
+    color: var(--primary);
 }
 
 .review-count strong {
-    color: var(--primary-dark);
     font-size: 1.2rem;
 }
 
@@ -222,14 +202,15 @@ legend {
     display: inline-block;
     padding: 0.75rem 1rem;
     border-radius: 0.45rem;
-    background: var(--primary);
-    color: var(--surface);
+    background: var(--secondary);
+    color: var(--border);
     font-weight: 700;
     text-decoration: none;
 }
 
 .back-link:hover {
-    background: var(--primary-dark);
+    background: var(--primary);
+    color: var(--accent);
 }
 
 .visually-hidden {
@@ -244,10 +225,8 @@ legend {
 
 footer {
     padding: 1rem;
-    background: #eee6f7;
-    color: var(--muted);
+    background: var(--secondary);
     text-align: center;
-    font-size: 0.9rem;
 }
 
 footer p {
