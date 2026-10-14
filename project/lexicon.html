@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search approachable definitions for soil, watering, plant health, garden tools, and more.">
+  <meta name="author" content="Anne Ferris">
+  <title>Garden Lexicon | Rooted Lexicon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">r</span> Rooted <span>Lexicon</span></a>
+      <nav><ul class="nav-list">
+        <li><a href="index.html">Home</a></li><li><a href="lexicon.html">Lexicon</a></li><li><a href="guides.html">Growing guides</a></li><li><a href="ask.html">Ask a gardener</a></li>
+      </ul></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-intro">
+      <p class="eyebrow">The garden, in plain language</p>
+      <h1>Garden lexicon</h1>
+      <p>Curious about a word on a seed packet or in a growing guide? Search these beginner-friendly definitions, then save the ones you want to remember.</p>
+    </section>
+    <section class="lexicon-tools">
+      <label for="term-search">Search by word or meaning</label>
+      <div class="search-row"><input type="search" id="term-search" name="term-search" placeholder="Try “compost” or “watering”…" autocomplete="off"><button class="button" id="clear-search" type="button">Clear search</button></div>
+      <p id="result-count" class="result-count" role="status"></p>
+    </section>
+    <section class="lexicon-layout">
+      <div>
+        <div class="section-title-row"><div><p class="eyebrow">Keep close at hand</p><h2>All garden terms</h2></div></div>
+        <div class="term-grid" id="term-list"></div>
+      </div>
+      <aside class="saved-panel" id="saved-terms">
+        <p class="eyebrow">Your personal reference</p>
+        <h2 id="saved-heading">Saved terms <span class="saved-count" id="saved-count">0</span></h2>
+        <p class="saved-hint">Select “Save term” on any definition to keep it here in this browser.</p>
+        <div id="saved-list"></div>
+      </aside>
+    </section>
+    <section class="callout">
+      <div><p class="eyebrow">Put a new word into practice</p><h2>Want help choosing your next step?</h2><p>Explore practical guides for soil, water, and getting started at home.</p></div>
+      <a class="button" href="guides.html">Visit growing guides <span>→</span></a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="index.html">Rooted Lexicon</a><p>Practical words for a flourishing garden.</p><p class="copyright">© <span data-year></span> Anne Ferris · <a href="siteplan.html">View the site plan</a></p><p class="last-modified">Last modified: <time data-last-modified></time></p></div></footer>
+</body>
+</html>

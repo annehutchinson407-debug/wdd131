@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send a gardening question or suggest a word for the Rooted Lexicon gardening glossary.">
+  <meta name="author" content="Anne Ferris">
+  <title>Ask a Gardener | Rooted Lexicon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">r</span> Rooted <span>Lexicon</span></a>
+      <nav><ul class="nav-list">
+        <li><a href="index.html">Home</a></li><li><a href="lexicon.html">Lexicon</a></li><li><a href="guides.html">Growing guides</a></li><li><a href="ask.html">Ask a gardener</a></li>
+      </ul></nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-intro">
+      <p class="eyebrow">Let's grow together</p>
+      <h1>Ask a gardener</h1>
+    </section>
+    <section class="contact-layout">
+      <div class="contact-note">
+        <p class="eyebrow">A friendly reminder</p>
+        <h2>Every gardener starts somewhere.</h2>
+        <p>Share what you are growing and what has you curious. If you are asking about a plant, include what the light is like and how you have been watering it.</p>
+        <div class="tip-box"><h3>Helpful details to include</h3><ul><li>What you are growing and where it is planted</li><li>How many hours of direct sun it receives</li><li>What changes you have noticed and when they began</li></ul></div>
+        <img class="contact-image" src="images/esslingen.webp" alt="Green trees and blooming flowers beside the water" width="1000" height="750" loading="lazy">
+      </div>
+      <form class="question-form" id="question-form">
+        <h2>Send a garden question</h2>
+        <p class="form-required"><span>*</span> Required fields</p>
+        <label for="name">Your name <span>*</span></label>
+        <input id="name" name="name" type="text">
+        <label for="email">Email address <span class="optional-note">*</span></label>
+        <input id="email" name="email" type="text">
+        <label for="topic">What is your question about? <span>*</span></label>
+        <select id="topic" name="topic" required>
+          <option value="" selected disabled>Choose a topic</option>
+          <option value="plants">Plant care</option>
+          <option value="soil">Soil and compost</option>
+          <option value="watering">Watering</option>
+          <option value="vocabulary">A gardening word</option>
+          <option value="other">Something else</option>
+        </select>
+        <label for="message">Your question <span>*</span></label>
+        <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000" placeholder="Tell us what you are wondering about…"></textarea>
+        <label class="checkbox-label" for="updates"><input id="updates" name="updates" type="checkbox"> Let me know when new garden terms are added</label>
+        <button class="button" type="submit">Save my question <span>→</span></button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+    <section class="callout">
+      <div><p class="eyebrow">Looking for a quick answer?</p><h2>Search before you dig.</h2><p>The lexicon has clear definitions for many of the words gardeners use every day.</p></div>
+      <a class="button" href="lexicon.html">Search garden terms <span>→</span></a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><a class="footer-brand" href="index.html">Rooted Lexicon</a><p>Practical words for a flourishing garden.</p><p class="copyright">© <span data-year></span> Anne Ferris · <a href="siteplan.html">View the site plan</a></p><p class="last-modified">Last modified: <time data-last-modified></time></p></div></footer>
+</body>
+</html>
