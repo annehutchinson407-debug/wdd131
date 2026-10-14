@@ -1,7 +1,7 @@
 :root {
     --primary: #2f6f4f;
     --primary-dark: #1d4f3a;
-    --secondary: #7e57c2;
+    --secondary: #5a3c8a;
     --accent: #eaf7ee;
     --text: #1f2a37;
     --muted: #5d6c75;
@@ -24,7 +24,6 @@ html {
 body {
     margin: 0;
     font-family: var(--body-font);
-    background: linear-gradient(180deg, #f7f9fc 0%, #edf3f8 100%);
     color: var(--text);
     line-height: 1.7;
 }
@@ -40,14 +39,13 @@ a {
 
 header {
     background: var(--primary-dark);
-    color: #fff;
+    color: var(--accent);
     box-shadow: 0 8px 20px var(--shadow);
 }
 
 .topbar,
 main,
 footer {
-    width: min(var(--max-width), calc(100% - 2rem));
     margin: 0 auto;
 }
 
@@ -76,9 +74,8 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: var(--accent);
     text-decoration: none;
-    opacity: 0.9;
     font-family: var(--heading-font);
     font-weight: 600;
 }
@@ -86,6 +83,15 @@ nav a {
 nav a:hover,
 nav a:focus {
     text-decoration: overline;
+}
+
+:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+nav a:focus-visible {
+    outline-color: var(--accent);
 }
 
 main {
@@ -111,12 +117,12 @@ h3 {
 }
 
 h1 {
-    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-size: clamp(2.2rem, 4rem, 3.4rem);
     margin-bottom: 0.5rem;
 }
 
 h2 {
-    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    font-size: clamp(1.5rem, 2rem, 2.2rem);
     margin-bottom: 1rem;
 }
 
@@ -133,7 +139,6 @@ h2 {
 }
 
 .card {
-    background: #f9fafb;
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1.25rem;
@@ -144,8 +149,7 @@ h2 {
 }
 
 .scenario-box {
-    background: #f4f3ff;
-    border: 1px solid rgba(126, 87, 194, 0.25);
+    border: 1px solid var(--shadow);
     border-radius: 12px;
     padding: 1.25rem;
     margin-top: 1.5rem;
@@ -168,25 +172,23 @@ h2 {
 }
 
 .color-block.forest {
-    background: #2f6f4f;
+    background: var(--primary);
 }
 
-.color-block.purple {
-    background: #7e57c2;
+.color-block.violet {
+    background: var(--secondary);
 }
 
 .color-block.mint {
-    background: #eaf7ee;
-    border-bottom: 1px solid var(--border);
+    background: var(--accent);
 }
 
 .color-block.charcoal {
-    background: #1f2a37;
+    background: var(--text);
 }
 
 .swatch-info {
     padding: 0.8rem 0.9rem;
-    background: white;
 }
 
 .usage-list {
@@ -226,7 +228,7 @@ h2 {
 }
 
 .wireframe-card {
-    background: #f9fafb;
+    background: var(--border);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1rem;
@@ -239,7 +241,7 @@ h2 {
 }
 
 .wireframe > div {
-    background: #edf3ff;
+    background: var(--accent);
     border: 1px dashed var(--primary);
     border-radius: 8px;
     padding: 0.8rem;
@@ -292,7 +294,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-    background: white;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -307,7 +308,7 @@ td {
 }
 
 th {
-    background: #edf3f8;
+    background: var(--accent);
     color: var(--primary-dark);
     font-family: var(--heading-font);
 }

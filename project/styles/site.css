@@ -2,7 +2,7 @@
   color-scheme: light;
   --primary-color: rgb(47 111 79);
   --secondary-color: rgb(29 79 58);
-  --accent1: rgb(126 87 194);
+  --accent1: rgb(90 60 138);
   --accent2: rgb(234 247 238);
   --accent3: rgb(246 250 245);
   --text-color: rgb(31 42 55);
@@ -47,6 +47,12 @@ select:focus-visible,
 textarea:focus-visible {
   outline: 3px solid var(--accent1);
   outline-offset: 3px;
+}
+
+.site-header :focus-visible,
+.site-footer :focus-visible,
+.callout :focus-visible {
+  outline-color: var(--accent2);
 }
 
 img {
@@ -891,4 +897,3 @@ textarea {
     flex-direction: column;
   }
 }
-
