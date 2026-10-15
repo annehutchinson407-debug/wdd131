@@ -82,7 +82,7 @@ function getSavedTerms() {
       ? saved.filter((id) => gardenTerms.some((term) => term.id === id))
       : [];
   } catch (error) {
-    console.error("Unable to read saved garden terms from localStorage.", error);
+    console.error(`Unable to read saved garden terms from localStorage.`, error);
     return [];
   }
 }
@@ -92,7 +92,7 @@ function saveTerms(ids) {
     localStorage.setItem(savedTermsKey, JSON.stringify(ids));
     return true;
   } catch (error) {
-    console.error("Unable to save garden terms to localStorage.", error);
+    console.error(`Unable to save garden terms to localStorage.`, error);
     return false;
   }
 }
@@ -173,7 +173,7 @@ function setDailyTerm() {
   const dayIndex = Math.floor(Date.now() / 86400000) % gardenTerms.length;
   const term = gardenTerms[dayIndex];
   heading.textContent = `Today's word: ${term.word}`;
-  definition.textContent = term.definition;
+  definition.textContent = `${term.definition}`;
 }
 
 function handleQuestionSubmit(event) {
@@ -197,8 +197,8 @@ function handleQuestionSubmit(event) {
     status.textContent = `Thanks, ${question.name}! Your question is saved in this browser.`;
     form.reset();
   } catch (error) {
-    console.error("Unable to save the garden question to localStorage.", error);
-    status.textContent = "Your browser could not save this question. Please try again or check its storage settings.";
+    console.error(`Unable to save the garden question to localStorage.`, error);
+    status.textContent = `Your browser could not save this question. Please try again or check its storage settings.`;
   }
 }
 
@@ -210,8 +210,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastModifiedElement = document.querySelector("[data-last-modified]");
   if (lastModifiedElement) {
     const lastModified = new Date(document.lastModified);
-    lastModifiedElement.textContent = lastModified.toLocaleString();
-    lastModifiedElement.setAttribute("datetime", lastModified.toISOString());
+    lastModifiedElement.textContent = `${lastModified.toLocaleString()}`;
+    lastModifiedElement.setAttribute("datetime", `${lastModified.toISOString()}`);
   }
 
   setDailyTerm();
